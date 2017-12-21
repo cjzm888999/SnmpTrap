@@ -43,7 +43,7 @@ public class SendTrapFrame extends JFrame {
 	 */
 	public SendTrapFrame() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 365);
+		setBounds(100, 100, 450, 335);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
@@ -121,7 +121,7 @@ public class SendTrapFrame extends JFrame {
 		Image image=tk.createImage("images/bd32x32.gif"); 
 		setIconImage(image);
 		try {
-			UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsClassicLookAndFeel");
+			UIManager.setLookAndFeel("javax.swing.plaf.metal.MetalLookAndFeel");
 		} catch (ClassNotFoundException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
